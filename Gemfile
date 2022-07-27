@@ -4,6 +4,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.1.2"
 
 gem "tzinfo-data"
+gem "bcrypt"
+gem 'bootstrap', '~> 4.1.1'
+gem 'jquery-rails'
+gem 'sass-rails'
+gem 'autoprefixer-rails', '8.6.5'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.3", ">= 7.0.3.1"
