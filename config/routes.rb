@@ -3,8 +3,9 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  root "welcome#index"
+  root "sessions#login"
 
+  get '/kpane', to: 'welcome#control_pane'
   get '/user', to: 'users#index'
 
   get '/login', to: 'sessions#login'
