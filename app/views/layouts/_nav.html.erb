@@ -8,6 +8,16 @@
     <% if logged_in? %>
         <a style="margin-right: 20px">Bienvenido, <%= "#{current_user.name}" %></a>
     <% end %>
+    <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Opciones
+    </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="/mainpage">Previsualizar</a>
+        <a class="dropdown-item" href="/kpane">Panel de control</a>
+        <a class="dropdown-item" href="/kpane">Opciones generales</a>
+      </div>
+    </div>
     <div style="padding-left: 10px;">
         <a class="btn btn-outline-success" href="/logout" role="button">
          Salir

@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root "sessions#login"
 
   get '/kpane', to: 'welcome#control_pane'
+  get '/mainpage', to: 'welcome#main_page'
   get '/user', to: 'users#index'
 
   get '/login', to: 'sessions#login'
